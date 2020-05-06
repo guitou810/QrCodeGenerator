@@ -1,3 +1,6 @@
+# Scanneur QrCode
+Installer sur votre téléphone un scanneur de QrCode pour les lire.
+
 # Dependencies
 npm install pour installer les dependences du package.json
 
