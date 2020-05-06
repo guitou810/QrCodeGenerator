@@ -1,3 +1,6 @@
+# Dependencies
+npm install pour installer les dependences du package.json
+
 # QrCode
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
