@@ -1,0 +1,18 @@
+<div class="form-row">
+    <div class="form-group col-md-5">
+        <label for="qrcode-field-email-email">Mail</label> 
+        <input type="email" class="form-control" (change)="SendMail($event.target.value)" name="email" id="qrcode-field-email-email" placeholder="max@mustermann.de">
+    </div>
+    <div class="form-group col-md-5">
+        <label for="qrcode-field-email-subject">Sujet</label> 
+        <input type="" class="form-control" (change)="SendMailS($event.target.value)" name="sujet" id="qrcode-field-email-subject" placeholder="Hallo">
+    </div>
+</div>
+<div class="form-group">
+    <label for="qrcode-field-email-text">Texte </label>
+</div>
+<div class="form-group">
+    
+    <textarea name="text" class="form-control" (change)="SendMailT($event.target.value)" cols="50" maxlength="300" id="qrcode-field-email-text" style="height:9em;"></textarea>
+    <div class="form-control">Maximum 300 caractères</div>
+</div>

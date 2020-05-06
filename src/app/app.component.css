@@ -1,0 +1,18 @@
+#selector {
+    border: teal;
+    border-style: groove;
+}
+#selector2 {
+    border: teal;
+    border-style: groove;
+    width: 565px;
+    height: 332px;
+    max-width: 565px;
+    max-height: 350px;
+}
+
+h4{
+    background-color: teal;
+    color:white;
+    position: relative;
+}

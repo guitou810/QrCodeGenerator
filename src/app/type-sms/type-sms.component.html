@@ -1,0 +1,16 @@
+<div class="form-row">
+    <div class="form-group">
+        <label for="qrcode-field-sms-number">Numéro Téléphone</label>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="number" (change)="SendsmsN($event.target.value)" id="qrcode-field-sms-number">
+    </div>
+</div> 
+    <div class="form-group">
+        <label for="qrcode-text">Texte</label> 
+    </div>
+    <div class="form-group">
+        <textarea name="sms-text" claas='form-control' (change)="SendsmsT($event.target.value)" id="qrcode-text" maxlength="300" cols="50" style="height:10em;"></textarea>
+        <div class="form-control">Maximum 300 caractères</div>
+    </div> 
+

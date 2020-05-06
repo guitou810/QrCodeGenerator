@@ -1,0 +1,26 @@
+<div class="form-row">
+    <div class="form-group col-md-5">
+        <label for="qrcode-field-vcard-nom">Nom</label>
+        <input type="text"  class="form-control" name="Nom" (change)="SendcarteN($event.target.value)" id="qrcode-field-vcard-nom" required>
+        <label for="qrcode-field-vcard-Prenom">Prenom</label>
+        <input type="text"  class="form-control" name="Prenom" (change)="SendcarteP($event.target.value)" id="qrcode-field-vcard-Prenom" required>
+        <label for="qrcode-field-vcard-titre">Adresse</label>
+        <input type="text" class="form-control" name="Adresse" (change)="SendcarteA($event.target.value)" id="qrcode-field-vcard-adresse" required>
+        <label for="qrcode-field-vcard-zip">Code Postal</label>
+        <input type="text" class="form-control" name="zip" (change)="SendcarteZ($event.target.value)" id="qrcode-field-vcard-zip" required>
+        
+       
+    </div>
+    <div class="form-group col-md-4">
+        <label for="qrcode-field-vcard-ville">Ville</label>
+        <input type="text" class="form-control" name="Ville" (change)="SendcarteV($event.target.value)" id="qrcode-field-vcard-ville" required> 
+        <label for="qrcode-field-vcard-pays">Pays</label>
+        <input type="text" class="form-control" name="Pays" (change)="SendcartePa($event.target.value)" id="qrcode-field-vcard-pays" required>
+        <label for="qrcode-field-vcard-entreprise">Entreprise</label>
+        <input type="text" class="form-control" name="Entreprise" (change)="SendcarteE($event.target.value)" id="qrcode-field-vcard-entreprise" required>
+        <label for="qrcode-field-vcard-mailpersonel">Mail</label>
+        <input type="text" class="form-control" name="Mailpersonel" (change)="SendcarteMp($event.target.value)" id="qrcode-field-vcard-mailpersonel" required>
+        <label for="qrcode-field-vcard-phonepersonel">Téléphone </label>
+        <input type="tel" class="form-control" pattern="^0[1-68][0-9]{8}$" name="phonedomicile" (change)="SendcarteTd($event.target.value)" id="qrcode-field-vcard-phonepersonel" required>
+    </div>
+</div>

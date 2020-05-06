@@ -1,0 +1,31 @@
+<div class="form-group">
+        <label for="qrcode-field-geolocation-latitude">Latitude    </label>
+        <div class="form-row my-2">
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" (change)="SendLat($event.target.value)" name="latitude" id="qrcode-field-geolocation-latitude" placeholder="48,997624">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="latitude-type">N</label>
+                <input type="radio" id="latitude-type" name="latitude-type" value="N" class="form-control" checked="checked" >
+            </div>
+            <div class="form-group col-md-3">
+                <label for="latitude-type">S</label>
+                <input type="radio" name="latitude-type" (change)="SendLatS($event.target.checked)" value="S" class="form-control">
+            </div>
+        </div>
+        
+        <div class="form-row my-2">
+            <label for="qrcode-field-geolocation-longitude">Longitude</label>
+            <div class="form-group col-md-3">
+                <input type="text" class="form-control" (change)="SendLong($event.target.value)" name="longitude" id="qrcode-field-geolocation-longitude" placeholder="8,380385">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="longitude-type">W</label>
+                <input type="radio" id="longitude-type" (change)="SendLongW($event.target.checked)" class="form-control" name="longitude-type" value="W" >
+            </div>
+            <div class="form-group col-md-3">
+                <label for="longitude-type">E</label>
+                <input type="radio" class="form-control" name="longitude-type" value="E" checked="checked" >
+            </div>
+        </div>
+</div>

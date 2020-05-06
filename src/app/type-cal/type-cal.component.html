@@ -1,0 +1,16 @@
+<div class="form-row">
+    <label for="qrcode-field-event-description">Description</label>
+    <input type="text" class="form-control" (change)="SendDesc($event.target.value)" name="description" id="qrcode-field-event-description">
+</div>
+
+        <div class="form-row">
+            <div class="form-group col-md-5 my-2">
+                <label for="qrcode-field-event-from">Début</label>
+                <input type="datetime-local" (change)="SendFrom($event.target.value)" class="form-control" name="from" id="qrcode-field-event-from" >
+            </div>
+            <div class="form-group col-md-5 my-2">
+                <label for="qrcode-field-event-to">Fin</label>
+                <input type="datetime-local" (change)="SendTo($event.target.value)" class="form-control" name="to" id="qrcode-field-event-to" >
+            </div>
+        </div>
+

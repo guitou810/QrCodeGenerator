@@ -1,0 +1,20 @@
+<div class="form-row">
+    <div class="form-group col-md-4">
+        <label for="qrcode-field-wifi-type">Encryption</label>
+        <select class="form-control" (change)="SendEncr($event.target.selected)" name="type" id="qrcode-field-wifi-type">
+            <option value="WPA">WPA</option>
+            <option value="WEP">WEP</option>
+            <option value="nopass">unencrypted</option>
+        </select>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="qrcode-field-wifi-ssid">SSID/Nom box</label>
+        <input type="text" class="form-control" (change)="SendSSID($event.target.value)" name="ssid" id="qrcode-field-wifi-ssid">
+    </div>
+</div>
+<div class="form-group">
+    <label for="qrcode-field-wifi-password">Mot de passe</label>
+</div>
+<div class="form-group">
+    <input type="password" (change)="SendPass($event.target.value)" class="form-control" name="password" id="qrcode-field-wifi-password">
+</div>
